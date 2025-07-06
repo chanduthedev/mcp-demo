@@ -7,15 +7,24 @@ This is to a simple create Model Context Protocol (MCP) server and add some basi
 
 ## How to start MCP Server
 
-0. Set up virtual environment
+Step 0.
+- Set up virtual environment and enable virtual environment
+- Create new `.env` file, copy content from `env` file and update API Key
 
-1. enable virtual environemnt and install dependencies by running below command
+Step 1.
+- Install dependencies by running below command
 
-   `pip3 install -r requirements.txt`
+  `pip3 install -r requirements.txt`
 
-2. Access API service specs by hitting the url
+Step 2.
+- Run below command to start the server
 
-  `uvicorn mcp_server:app --reload`
+`uvicorn mcp_server:app --reload`
+
+Step 3.
+- Access below url to see available API points
+
+`http://localhost:8000/docs`
 
 ## Test MCP Server
 
